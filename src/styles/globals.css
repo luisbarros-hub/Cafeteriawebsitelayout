@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    /* Molly's Café 1950s Palette */
+    --color-molly-brown-light: #C6A988;
+    --color-molly-cream: #F7EFE6;
+    --color-molly-brown-dark: #533A2E;
+    --color-molly-mint: #B6E2D3;
+    --color-molly-pink: #E9A8C1;
+    --color-molly-gold: #DDBB76;
+    
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 1rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-[#F7EFE6] text-[#533A2E];
+    font-family: 'Quicksand', 'Comic Sans MS', cursive, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 700;
+    font-family: 'Pacifico', cursive, serif;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'Pacifico', cursive, serif;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+
+  h6 {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    font-weight: 400;
+  }
+
+  small {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+}
+
+/* Cartoon/Vintage Effects */
+.neon-glow {
+  text-shadow: 
+    0 0 10px rgba(233, 168, 193, 0.8),
+    0 0 20px rgba(233, 168, 193, 0.6),
+    0 0 30px rgba(233, 168, 193, 0.4);
+}
+
+.cartoon-shadow {
+  box-shadow: 
+    6px 6px 0px rgba(83, 58, 46, 0.3),
+    0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.vintage-border {
+  border: 4px solid #533A2E;
+  border-radius: 30px;
+}
